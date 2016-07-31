@@ -1,23 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ComicTitle from './ComicTitle.jsx';
-import ComicThumbail from './ComicThumbnail.jsx';
+import ComicThumbnail from './ComicThumbnail.jsx';
 import ComicPrice from './ComicPrice.jsx';
+import BuyButton from './buybutton.jsx';
+
+/* var comicStyling = {
+  display: 'block',
+  width: '100%',
+  maxWidth: '100%',
+  maxHeight: '15%',
+  borderBottom: '3px solid blue',
+  clear: 'left'
+}
+*/
+
+var comicStyling = {
+  display: 'block',
+  width: '950px',
+  height: '500px',
+  backgroundColor: 'white',
+  clear: 'left',
+  borderBottom: '3px solid blue'
+}
+
+/* set up comicLeft and comicRight to style img > title/price , but got it fixed before styling that */
 
 export default class Comic extends React.Component {
   render() {
     return (
-      <div>
-      {this.props.comics.map(function(item){
-        return (
-          <div>  
-          <ComicTitle title={this.props.title} />
-          <ComicThumbnail thumbnail={this.props.thumbnail} />
-          <ComicPrice price={this.props.prices} />
+          <div className="comic" style={comicStyling}>  
+            <div className="comicLeft"><ComicTitle title={this.props.title} /> </div>
+            <div className="comicRight">
+             <ComicThumbnail thumbnail={this.props.thumbnail} />
+             <ComicPrice prices={this.props.prices} />
+             <BuyButton />
+            </div>  
           </div>
-        )
-      })}    
-      </div>
     )
   }
 }
+
+

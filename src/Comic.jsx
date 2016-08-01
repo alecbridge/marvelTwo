@@ -19,9 +19,9 @@ var comicStyling = {
   display: 'block',
   width: '950px',
   height: '500px',
-  backgroundColor: 'white',
+  backgroundColor: '#dedede',
   clear: 'left',
-  borderBottom: '3px solid lightgrey'
+  borderBottom: '3px solid darkgrey'
 }
 
 /* set up comicLeft and comicRight to style img > title/price , but got it fixed before styling that */

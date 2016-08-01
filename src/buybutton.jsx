@@ -1,7 +1,7 @@
 import React from 'react';
   
 var buttonHolder = {
-  backgroundColor: 'white',
+  backgroundColor: '#dedede',
   textAlign: 'center',
 }
 
@@ -11,8 +11,9 @@ var buttonStyle = {
   width: '15%',
   fontSize: '24px',
   marginTop: '18px',
-  border: '1px solid black',
+  border: '2px solid black',
   borderRadius:'10px',
+  textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black',
 }
 
 export default class BuyButton extends React.Component {

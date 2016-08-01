@@ -10,7 +10,8 @@ var priceTagStyle = {
   fontSize: '30px',
   paddingTop: '18px',
   color: 'red',
-  backgroundColor: 'white'
+  backgroundColor: '#dedede',
+  textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black',
 }
 
 export default class ComicPrice extends React.Component {

@@ -10,7 +10,9 @@ var comicsListStyle = {
   maxWidth: '75%',
   maxHeight: '100%',
   clear: 'both',
-  overflow: 'auto'
+  overflow: 'auto',
+  border: '3px solid #d30808',
+  borderRadius: '5px'
 }
 
 export default class Comics extends React.Component {

@@ -8,11 +8,9 @@ var comicImgThumbnail = {
   minHeight: '490px',
   maxHeight: '490px',
   padding: '5px',
-  marginTop: '2px',
-  borderRight: '4px solid lightgrey',
-  backgroundColor: 'white' 
+  /*borderRight: '4px solid lightgrey',*/
+  backgroundColor: '#dedede' 
 }
-
 
 export default class ComicThumbnail extends React.Component {
   render() {

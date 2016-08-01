@@ -13,7 +13,7 @@ var comicTitleStyle = {
   paddingTop: '15px',
   paddingBottom: '25px',
   color: 'white',
-  backgroundColor: 'white',
+  backgroundColor: '#dedede',
   textShadow:'-4px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
 }
 

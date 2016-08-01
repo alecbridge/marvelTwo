@@ -3,8 +3,8 @@
   import globalStyles from './assets/styles/global.css';
   import DataFetcher from './DataFetcher.jsx';
 
-  // import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
-  // import BuyPage from './BuyPage.jsx';
+  import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
+  import BuyPage from './BuyPage.jsx';
 
 
   var marvelHeroesStyle = {
@@ -26,39 +26,23 @@
       return (
         <div>
           <marvelHeroes style={marvelHeroesStyle}><img style={marvelHeroesImg} src="http://demandware.edgesuite.net/aamz_prd/on/demandware.static/-/Sites-disneyuk-Library/default/dwe56ec0ca/assets/franchise/2015/4508_fp_FWB_Marvel_11122014.png"  /></marvelHeroes>
-          <DataFetcher />
+           {this.props.children}
         </div>  
       );
     }
   }
 
-  ReactDOM.render(
-    <App />,
-    document.getElementById('root')
-  );
-  
-
-
   // ReactDOM.render(
-  //   <Router history={browserHistory}>
-  //     <Route path="/" component={App}>
-  //       <Route path="buy" component={BuyPage} />
-  //     </Route>
-  //   </Router>,
+  //   <App />,
   //   document.getElementById('root')
   // );
-
-
-  /*
-  Remove <DataFetcher /> of App line 28
-  uncomment imports line 4 6 & 7 for router and BuyPage
   
-  comment out normal App render, uncomment Router render 
-  comment out import of DataFetcher?
-
-  in the App add {this.props.children}
-  
-  */
-
-
-  
+  ReactDOM.render(
+    <Router history={browserHistory}>
+      <Route path="/" component={App}>
+        <IndexRoute component={DataFetcher} />
+        <Route path="buy" component={BuyPage} />
+      </Route>
+    </Router>,
+    document.getElementById('root')
+  );

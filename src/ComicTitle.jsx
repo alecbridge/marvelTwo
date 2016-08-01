@@ -4,7 +4,7 @@ var comicTitleStyle = {
   display: 'block',
   width: '60%',
   float: 'right',
-  fontFamily: 'cursive',
+  fontFamily: 'arial',
   fontFamily: 'Bangers',
   textAlign: 'center',
   fontSize: '40px',  /* change back to 55px eventually after Bangers imported */
@@ -12,14 +12,9 @@ var comicTitleStyle = {
   maxHeight: '200px',
   paddingTop: '15px',
   paddingBottom: '25px',
-  color: 'purple',
-  backgroundColor: 'lightgrey',
-  /*borderTop: '2px solid grey',      This makes it look fixed for border */
- /* textShadow:
-  -5px -1px 0 #000,  
-   1px -1px 0 #000,
-  -1px 1px 0 #000,
-   1px 1px 0 #000; */
+  color: 'white',
+  backgroundColor: 'white',
+  textShadow:'-4px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
 }
 
 export default class ComicTitle extends React.Component {
@@ -30,13 +25,3 @@ export default class ComicTitle extends React.Component {
   }
 }
 
-
-
-/*comic-title, price-tag {
-  display: block;
-  width: 60%;
-  float: left;
-  font-family: 'Bangers', cursive;
-  text-align: center;
-}
-*/

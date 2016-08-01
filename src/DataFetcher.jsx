@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Comics from './Comics.jsx';
 import md5 from 'md5';
-/*import fetch from 'whatwg-fetch'; */
+//import fetch from 'whatwg-fetch'; 
 
 function fetchJSON(url) {
   return fetch(url).then(function(response) {

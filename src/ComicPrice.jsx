@@ -5,12 +5,12 @@ var priceTagStyle = {
   position: 'relative',
   width: '60%',
   float: 'right',
-  fontFamily: /*'Bangers',*/ 'cursive',
+  fontFamily: 'Bangers',
   textAlign: 'center',
   fontSize: '30px',
   paddingTop: '18px',
   color: 'red',
-  backgroundColor: 'lightblue'
+  backgroundColor: 'white'
 }
 
 export default class ComicPrice extends React.Component {

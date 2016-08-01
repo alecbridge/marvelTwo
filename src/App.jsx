@@ -3,6 +3,10 @@
   import globalStyles from './assets/styles/global.css';
   import DataFetcher from './DataFetcher.jsx';
 
+  // import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
+  // import BuyPage from './BuyPage.jsx';
+
+
   var marvelHeroesStyle = {
     display: 'block',
     maxWidth: '100%',
@@ -32,4 +36,29 @@
     <App />,
     document.getElementById('root')
   );
+  
+
+
+  // ReactDOM.render(
+  //   <Router history={browserHistory}>
+  //     <Route path="/" component={App}>
+  //       <Route path="buy" component={BuyPage} />
+  //     </Route>
+  //   </Router>,
+  //   document.getElementById('root')
+  // );
+
+
+  /*
+  Remove <DataFetcher /> of App line 28
+  uncomment imports line 4 6 & 7 for router and BuyPage
+  
+  comment out normal App render, uncomment Router render 
+  comment out import of DataFetcher?
+
+  in the App add {this.props.children}
+  
+  */
+
+
   

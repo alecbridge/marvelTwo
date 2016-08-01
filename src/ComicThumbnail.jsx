@@ -9,8 +9,8 @@ var comicImgThumbnail = {
   maxHeight: '490px',
   padding: '5px',
   marginTop: '2px',
-  borderRight: '4px solid black',
-  backgroundColor: 'aquamarine' 
+  borderRight: '4px solid lightgrey',
+  backgroundColor: 'white' 
 }
 
 
